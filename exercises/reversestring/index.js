@@ -19,11 +19,17 @@ function reverse(str) {
   // return reverseStr;
 
   // Solution 3
-  let reverseStr = '';
-  for (let characters of str) {
-    reverseStr = characters + reverseStr;
-  }
-  return reverseStr;
+  // let reverseStr = '';
+  // for (let characters of str) {
+  //   reverseStr = characters + reverseStr;
+  // }
+  // return reverseStr;
+
+  // Solution 4
+
+  return str
+    .split('')
+    .reduce((reversed, character) => character + reversed, '');
 }
 
 module.exports = reverse;
